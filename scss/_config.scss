@@ -1,0 +1,18 @@
+// ***VARIABLES***
+$website-width: 1280px;
+$other-color: #ffbc00;
+$primary-color:  #FFA500;
+$secondary-color: #ccc;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$white-color: #fff;
+$bg-image: url('../img/bg-1.jpg');
+
+// *******FUNCTION*****
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

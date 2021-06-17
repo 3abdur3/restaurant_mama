@@ -1,0 +1,114 @@
+// @import "config";
+
+.container{
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+// ****BUTTONS***
+%btn-shared{
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn{
+  &-primary{
+    @extend %btn-shared;
+    background: $primary-color;
+    color: $dark-color;
+  }
+  &-light{
+    @extend %btn-shared;
+    background: $light-color;
+    color: $dark-color;
+  }
+  &-dark{
+    @extend %btn-shared;
+    background: $dark-color;
+    color: $white-color;
+  }
+}
+// "^" means, any class with that value will have the effect
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background: $primary-color;
+}
+
+// *****BACKGROUND-COLOR*****
+.bg{
+  &-primary{
+    background: $primary-color;
+    color: set-text-color($primary-color);
+  }
+  &-dark{
+    background: $dark-color;
+    color: set-text-color($dark-color);
+  }
+  &-light{
+    background: $light-color;
+    color: set-text-color($light-color);
+  }
+  &-secondary{
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+//
+// // ****PARAGRAPH/"lead"***
+// .lead{
+//   font-size: 1.3rem;
+//   margin: 2rem;
+//   text-align: center;
+// }
+//
+// // *****TEXT-CENTER****
+// .text-center{
+//   text-align: center;
+// }
+//
+// *****PADDING****
+.py{
+  &-1{padding: 1rem 0;}
+  &-2{padding: 2rem 0;}
+  &-3{padding: 3rem 0;}
+  &-4{padding: 4rem 0;}
+}
+//
+// // *****MARGIN****
+// .my{
+//   &-1{margin: 1rem 0;}
+//   &-2{margin: 2rem 0;}
+//   &-3{margin: 3rem 0;}
+//   &-4{margin: 4rem 0;}
+// }
+//
+// *****SECTION-TITLE****
+.section-title{
+  display: block;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+// ***BOTTOM-LINE****
+.bottom-line{
+  // To create a thick underline for a title
+  display: block;
+  margin: 0 auto 2rem auto;
+  height: 2px;
+  width: 3rem;
+  background: $primary-color;
+}
+
+// ****TEXT****
+.text-primary{
+  color: $primary-color;
+  text-transform: uppercase;
+}

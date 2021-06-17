@@ -1,0 +1,154 @@
+// ***Tablets***
+@media (max-width: 800px) {
+  #header-home{
+    height: 30rem;
+
+    .header-content{
+      padding-top: 4.5rem;;
+    }
+  }
+} // Tablet-media finished here
+
+
+// ****SMARTPHONES****
+@media(max-width: 500px) {
+  // HOME
+  #main-nav{
+    flex-direction: column;
+    align-items: center;
+
+    li{
+      padding: 1rem;
+    }
+    a{
+      padding: 0.4rem;
+    }
+  }
+
+  // HEADER
+  #header-home{
+    height: 25rem;
+
+    .header-content{
+      padding-top: 2rem;
+
+      h1{
+        font-size: 2.5rem;
+        line-height: 1;
+        margin-bottom: 3.5rem;
+      }
+      p{
+        display: none;
+      }
+    }
+  }
+  // SECTION-MENU
+  #menu{
+    padding: 20px 0;
+
+    .menu-icons{
+      margin: 1rem 0 1.5rem 0;
+    }
+  }
+  // GSECTION-GALLERY
+  #food-gallery{
+    padding: 20px 0;
+
+    .card{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  // SECTION-LOCATION
+  #location{
+    .business{
+      grid-template-columns: 1fr;
+    }
+  }
+  // ABOUT-PAGE
+  #header{
+    height: 100%;
+  }
+  #about{
+    .about-summery{
+      grid-template-columns: 1fr;
+      align-content: center;
+    }
+  }
+  // SECTION-TESTIMONIALS
+  #testimonials{
+    .row{
+      grid-template-columns: 1fr;
+    }
+  }
+  // MENU-PAGE
+  #main-menu{
+    .menu-items{
+      grid-template-columns: repeat(2, 1fr);
+
+      .item{
+        border-bottom: 1px solid $secondary-color;
+
+        &:nth-child(5), &:nth-child(6){
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  // CONTACT-PAGE
+  #contact{
+    .text-field{
+      grid-template-areas:
+        'name'
+        'email'
+        'subject'
+        'phone'
+        'message';
+    }
+  }
+  // CONTACT-PAGE-ICONS
+  #contact-icon{
+    .contact-info{
+      grid-template-columns: 1fr;
+
+      div{
+        border-bottom: 1px solid $primary-color;
+
+        &:hover{
+          background: none;
+        }
+        &:last-child{
+          border: none;
+        }
+      }
+    }
+  }
+
+  // FOOTER
+  #main-footer{
+    height: 7rem;
+
+    .footer-content{
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }
+
+} // Mobile-Media finished here
+
+
+// *****LANDSCAPE-MODE*****
+@media(max-height: 580px){
+  #header-home{
+
+    .header-content{
+
+      h1{
+        margin-bottom: 3rem;
+      }
+      p{
+        display: none;
+      }
+    }
+  }
+
+}
