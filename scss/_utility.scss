@@ -58,19 +58,7 @@ input[class^='btn-']:hover {
     color: set-text-color($secondary-color);
   }
 }
-//
-// // ****PARAGRAPH/"lead"***
-// .lead{
-//   font-size: 1.3rem;
-//   margin: 2rem;
-//   text-align: center;
-// }
-//
-// // *****TEXT-CENTER****
-// .text-center{
-//   text-align: center;
-// }
-//
+
 // *****PADDING****
 .py{
   &-1{padding: 1rem 0;}
@@ -78,15 +66,7 @@ input[class^='btn-']:hover {
   &-3{padding: 3rem 0;}
   &-4{padding: 4rem 0;}
 }
-//
-// // *****MARGIN****
-// .my{
-//   &-1{margin: 1rem 0;}
-//   &-2{margin: 2rem 0;}
-//   &-3{margin: 3rem 0;}
-//   &-4{margin: 4rem 0;}
-// }
-//
+
 // *****SECTION-TITLE****
 .section-title{
   display: block;
